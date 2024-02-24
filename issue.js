@@ -129,10 +129,10 @@ async function counts(_, { status, effortMin, effortMax }) {
 
 module.exports = {
     list,
-    add: mustBeSignedIn(add),
+    add,
     get,
-    update: mustBeSignedIn(update),
-    delete: mustBeSignedIn(remove),
+    update,
+    delete:remove,
     counts,
-    restore: mustBeSignedIn(restore),
+    restore,
 };
